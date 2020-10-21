@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="492.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="180.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сделать заявку записи на курс:" wrappingWidth="239.13671875">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <VBox layoutX="7.0" layoutY="38.0" prefHeight="450.0" prefWidth="173.0">
+               <children>
+                  <Label prefHeight="23.0" prefWidth="171.0" text="1 Выберите курс:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <CheckBox mnemonicParsing="false" onAction="#pressChekBox" text="Java">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="80.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#pressChekBox" text="JavaScript">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#pressChekBox" text="Python">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#pressChekBox" text="C#">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#pressChekBox" text="C++">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="40.0" />
+                     </VBox.margin>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <HBox layoutX="180.0" layoutY="38.0" prefHeight="35.0" prefWidth="409.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="411.0" text="2 Укажите тип файлов:">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane layoutX="180.0" layoutY="73.0" prefHeight="78.0" prefWidth="409.0">
+               <children>
+                  <RadioButton layoutX="23.0" layoutY="31.0" mnemonicParsing="false" onAction="#pressRadioButton" text="txt">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="136.0" layoutY="31.0" mnemonicParsing="false" onAction="#pressRadioButton" text="pdf">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="263.0" layoutY="31.0" mnemonicParsing="false" onAction="#pressRadioButton" text="docx">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </Pane>
+            <Pane layoutX="180.0" layoutY="151.0" prefHeight="167.0" prefWidth="409.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="31.0" prefHeight="20.0" prefWidth="186.0" text="3 Введите название файла: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label layoutX="205.0" layoutY="31.0" prefHeight="20.0" prefWidth="173.0" text="4 Введите путь к файлу:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="fileName" layoutX="14.0" layoutY="59.0" prefHeight="25.0" prefWidth="173.0" />
+                  <TextField fx:id="textPath" layoutX="205.0" layoutY="59.0" prefHeight="25.0" prefWidth="173.0" />
+               </children>
+            </Pane>
+            <Pane layoutX="180.0" layoutY="269.0" prefHeight="177.0" prefWidth="409.0">
+               <children>
+                  <Label layoutX="33.0" layoutY="28.0" prefHeight="20.0" prefWidth="66.0" text="Фамилия:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="71.0" prefHeight="20.0" prefWidth="59.0" text="Имя:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="111.0" prefHeight="20.0" prefWidth="87.0" text="Отчество: ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lastName" layoutX="130.0" layoutY="26.0" />
+                  <TextField fx:id="textName" layoutX="130.0" layoutY="69.0" />
+                  <TextField fx:id="textPatronymic" layoutX="130.0" layoutY="109.0" />
+                  <Label fx:id="showResult" layoutX="33.0" layoutY="157.0" prefHeight="20.0" prefWidth="327.0" text="Статус:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="310.0" layoutY="189.0" mnemonicParsing="false" onAction="#pressButton" text="Регистрация">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Button layoutX="229.0" layoutY="458.0" mnemonicParsing="false" onAction="#selPath" text="Выбор пути">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="358.0" layoutY="458.0" mnemonicParsing="false" onAction="#selFile" text="Выбор файла">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</VBox>
